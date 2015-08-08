@@ -5,35 +5,46 @@ $(document).ready(function() {
 		
 			// Left arrow key pressed
 			case 37:
-				$('img').animate({left: "-=40px"}, 'fast');
+				$('#mario').animate({left: "-=40px"}, 'fast');
 				break;
-				
-				
-			// Up Arrow Pressed
-			case 38:
-				$('img').animate({top: "-=40px"}, 'fast');
-				break;
-				
 				
 			// Right Arrow Pressed
 			case 39:
-				$('img').animate({left: "+=40px"}, 'fast');
+				$('#mario').animate({left: "+=40px"}, 'fast');
 				break;
+
+
+			// Enter Pressed
+			case 13:
+				$("#fireball").addClass("shown");
+
+				//animate it moving forward
+				$('#fireball').animate({left: "+=70px"}, 'fast');
+				$('#fireball').animate({left: "+=70px"}, 'fast');
+				$('#fireball').animate({left: "+=70px"}, 'fast');
+				$('#fireball').animate({left: "+=70px"}, 'fast');
+				$('#fireball').animate({left: "+=70px"}, 'fast');
+				$('#fireball').animate({left: "+=70px"}, 'fast');
+
+
+				$("#fireball").addClass("hidden");
+				
+				$('#fireball').animate({left: "-=420px"}, 'fast');
+				
+						
 					
-				
-			// Down Arrow Pressed
-			case 40:
-				$('img').animate({top: "+=40px"}, 'fast');
+				//$("#fireball").removeClass("shown");
 				break;			
-				
+
+
 
 
 			// Space Pressed
 			case 32:
-				$('img').animate({top: "-=40px"}, 'fast');
-				$('img').animate({top: "-=40px"}, 'fast');
-				$('img').animate({top: "+=40px"}, 'fast');
-				$('img').animate({top: "+=40px"}, 'fast');
+				$('#mario').animate({top: "-=60px"}, 'fast');
+				$('#mario').animate({top: "-=60px"}, 'fast');
+				$('#mario').animate({top: "+=60px"}, 'fast');
+				$('#mario').animate({top: "+=60px"}, 'fast');
 				break;  
 		}
 	});

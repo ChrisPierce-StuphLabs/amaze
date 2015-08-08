@@ -9,7 +9,28 @@ body {
     background-repeat: no-repeat;
 }
 
-span {
+#mario {
     position: absolute;
     top: 600px;
+}
+
+#fireball {
+    position: relative;
+    top: 600px;
+    right: -60px;
+}
+
+#goomba {
+    position: absolute;
+    top: 590px;
+    right: 0;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: inline;
 }
