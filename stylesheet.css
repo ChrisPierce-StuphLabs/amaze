@@ -3,3 +3,13 @@ img {
     left: 0;
     top: 0;
 }
+
+body {
+    background-image: url("mario.jpg");
+    background-repeat: no-repeat;
+}
+
+span {
+    position: absolute;
+    top: 600px;
+}
