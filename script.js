@@ -5,12 +5,16 @@ $(document).ready(function() {
 		
 			// Left arrow key pressed
 			case 37:
-				$('#mario').animate({left: "-=40px"}, 'fast');
+				$('#fireball').animate({left: "-=40px"}, 'fast');
+				$('#mario').animate({left: "-=40px"}, 'fast')
+				$('#fireball').addClass("hidden");
 				break;
 				
 			// Right Arrow Pressed
 			case 39:
+				$('#fireball').animate({left: "+=40px"}, 'fast');
 				$('#mario').animate({left: "+=40px"}, 'fast');
+				$('#fireball').addClass("hidden");
 				break;
 
 
@@ -48,4 +52,22 @@ $(document).ready(function() {
 				break;  
 		}
 	});
+
+
+	//First Goombas stuff
+	for(i=0; i<131; i++){
+	    $('#goomba1').animate({left: "-=15px"}, 'fast')
+	}
+
+	//Second Goombas stuff
+	for(i=0; i<131; i++){
+	    $('#goomba2').animate({left: "-=15px"}, 'fast')
+	}
+
+	//Last Goombas stuff
+	for(i=0; i<131; i++){
+	    $('#goomba3').animate({left: "-=15px"}, 'fast')
+	}
+	
+
 });

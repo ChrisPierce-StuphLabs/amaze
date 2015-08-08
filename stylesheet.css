@@ -20,12 +20,48 @@ body {
     right: -60px;
 }
 
-#goomba {
+
+#goomba1 {
     position: absolute;
     top: 590px;
     right: 0;
 
 }
+
+#goomba2 {
+    position: absolute;
+    top: 590px;
+    right: 250px;
+
+}
+
+#goomba3 {
+    position: absolute;
+    top: 590px;
+    right: 970px;
+
+}
+
+
+#question1 {
+    position: absolute;
+    top: 490px;
+    right:144px;
+}
+
+#question2 {
+    position: absolute;
+    top: 490px;
+    right:200px;
+}
+
+#question3 {
+    position: absolute;
+    top: 504px;
+    right:670px;
+}
+
+
 
 .hidden {
     display: none;
